@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: crimson text;
+}
+:root{
+  --red: #e30102;
+}
+*::selection{
+  background: var(--red) ;
+  color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--red);
+}
+html::-webkit-scrollbar{
+  width: 0.9rem;
+}
+/* --------------header section start ----------- */
+
+.header-section{
+ background: linear-gradient(to right, #000 0%, #000 40%, #e30102 40%, #e30102 100% );
+}
+
+.logo{
+	margin: 10px 0 5px 50px;
+}
+.mobile-logo{
+  display: none;
+}
+
+.number i{
+	margin-left: 150px;
+	font-size: 30px;
+	padding-top: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.header-right h5, h4{
+		display: inline-block;
+		color: #fff;
+		letter-spacing: 2px;
+		font-weight: 400!important;
+		margin-left: 5px;
+}
+.shipping i{
+	margin-left: 150px;
+	color: #fff!important;
+}
+.free-delivery {
+	font-size: 20px;
+	font-weight: 400!important;
+}
+.free-delivery span{
+	font-size: 15px;
+}
+
+/* ---------- header section end -------------- */
+
+/* ------------emotion section start ----------- */
+.emotion-section{
+	background: url('../image/emotion-bg.jpg');
+	background-repeat: no-repeat;
+	background: cover;
+	background-size: 100% 100%;
+	padding: 50px 0;
+}
+.emotion{
+	margin-top: 100px;
+	color: #fff;
+	margin-left: -10px;
+}
+.emotion span{
+	color: #e30102;
+	font-size: 30px;
+}
+.emotion input{
+	margin-bottom: 10px;
+}
+
+.emotion-img{
+	margin-top: 20px;
+}
+.emotion-img-mob{
+  display: none;
+}
+
+
+/* ------------------neon button ----------------- */
+.btn a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fe0c0c;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 4px
+}
+
+.btn a:hover {
+  background: #fe0c0c;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fe0c0c,
+              0 0 25px #fe0c0c,
+              0 0 50px #fe0c0c,
+              0 0 100px #fe0c0c;
+}
+
+.btn a span {
+  position: absolute;
+  display: block;
+}
+
+.btn a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fe0c0c);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.btn a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fe0c0c);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.btn a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fe0c0c);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.btn a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fe0c0c);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+/* ------------------neon button end--------------- */
+
+/* ------------emotion section end -------------- */
+
+/* -------------colection section start ------------ */
+.colection-section{
+	background: url('../image/bg-2.jpg');
+	background-repeat: no-repeat;
+	background: cover;
+	background-size: 100% 100%;
+	/* width: 1935px; */
+	padding: 0 0 100px 0;
+}
+
+.jeweler img{
+	margin-left: -250px;
+	margin-top: 100px;
+	display: inline-block;
+}
+.jeweler h2{
+	margin-top: -95px;
+	color: #e30102;
+}
+.jeweler h1{
+	color: #fff;
+}
+.ring{
+	background: #222222;
+	color: #fff;
+	padding: 30px 20px 40px 20px;
+	text-decoration: none;
+	margin: 30px 0;
+}
+.ring h5{
+	margin: 0;
+}
+.diamond{
+	margin-top: 20px!important;
+}
+.ring p{
+	margin-top: 10px!important;
+}
+.ring:hover {
+		box-shadow: 2px 2px 7px #e30102;
+		transform: translateY(-10px);
+}
+.necklace{
+	background: #e30102;
+	color: #fff;
+	padding: 30px 20px 40px 20px;
+	text-decoration: none;
+	margin: 30px 30px;
+}
+.necklace h5{
+	margin: 0;
+}
+
+.necklace p{
+	margin-top: 10px!important;
+}
+.necklace:hover {
+	transform: translateY(-10px);
+		box-shadow: 2px 2px 7px #222;
+}
+/* ------------- colection section end ------------- */
+
+
+/* -------------- review section start ---------- */
+.review-section{
+	background: url('../image/bg3.jpg');
+	background-repeat: no-repeat;
+	background: cover;
+	background-size: 100% 100%;
+	padding:  100px 0;
+}
+.review-section h1{
+	margin-top: 50px;
+	color: #fff;
+}
+.review-section p{
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+
+/* ----------review section end ----------------- */
+
+/* ---------------footer section start ------------- */
+.footer-section{
+ background:url('../image/bg4.jpg');
+ background-repeat: no-repeat;
+  background: cover;
+  background-size: 100% 100%;
+  padding: 100px 0 0 0;
+}
+.contact-info{
+  margin-top: 30px;
+  margin-left: 400px;
+  background-image: linear-gradient(to right, #920812,#bd1826);
+  width: 220px;
+  color: #fff;
+  padding: 20px 0 20px 20px;
+    position: relative;
+      z-index: 1;
+}
+.contact-info p{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.contact-info i{
+  color: #fff;
+}
+.contact-info:hover{
+  box-shadow: 2px 7px 7px #000;
+}
+.social-ion{
+  margin-left: 30px;
+}
+.social-ion i{
+    background: #7c7c7c;
+    padding: 10px 10px;
+    border-radius:20px;
+    margin-right: 5px;
+}
+.social-ion i:hover{
+  background: #e30102;
+}
+.google-map{
+  margin-top: -270px;
+  position: relative;
+  margin-left: 500px;
+}
+
+.copyright{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #d3d1d1;
+}
+
+/* ----------------footer section end ------------- */
+
+@media (max-width: 768px)  {
+
+  /* -- ----------- header section start ------------- -- */
+  .logo{
+  display: none;
+}
+.mobile-logo{
+  margin: 10px 0 10px 50px;
+  display: block;
+}
+ 
+.header-right{
+  margin-top: -60px;
+  margin-left: -5px;
+}
+  .number i{
+  font-size: 15px;
+  padding-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-right h5{
+  font-size: 10px;
+}
+.header-right h5, h4{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400!important;
+    margin-left: 5px;
+}
+.shipping i{
+   color: #fff!important;
+}
+.free-delivery {
+  font-size: 15px;
+  font-weight: 400!important;
+}
+.free-delivery span{
+  font-size: 10px;
+}
+/* - ------------- header section end ------------- - */
+
+/* - --------------emotion section start --------- */
+.emotion-section{
+  margin-top: -5px;
+}
+.emotion h1{
+  font-size: 20px;
+}
+.emotion h3,h5{
+  font-size: 15px;
+}
+.emotion{
+  margin-top: 0px;
+}
+.emotion span{
+  font-size: 20px;
+}
+.emotion input{
+  margin-bottom: 10px;
+}
+
+.emotion p{
+  font-size: 10px;
+}
+.emotion-img{
+  margin-top: 20px;
+  display: none;
+}
+.emotion-img-mob{
+  display: block;
+}
+/* - --------------emotion section end --------- */
+
+/* -------------colection section start ------------ */
+.colection-section{
+  margin-top: -5px;
+  padding: 0 0 50px 0;
+}
+.jeweler{
+  margin-left: -30px;
+}
+
+.jeweler img{
+  margin-left: -180px;
+  margin-top: 50px;
+  display: inline-block;
+}
+.jeweler h2{
+  margin-top: -80px;
+  color: #e30102;
+  font-size: 20px;
+}
+.jeweler h1{
+  color: #fff;
+  font-size: 25px;
+}
+.ring{
+  padding: 20px 10px 20px 10px;
+  text-decoration: none;
+  margin: 30px 0 0 0;
+}
+
+.ring p{
+  margin-top: 10px!important;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.necklace{
+  padding: 20px 10px 20px 10px;
+  text-decoration: none;
+  margin: 30px 0 0 0 ;
+}
+
+.necklace p{
+  margin-top: 10px!important;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* ------------- colection section end ------------- */
+
+
+/* -------------- review section start ---------- */
+.review-section{
+  margin-top: -5px;
+  padding:  50px 0;
+}
+.review-section img{
+  width: 150px;
+  height: auto;
+}
+.review-section h1{
+  margin-top: 30px;
+  color: #fff;
+  font-size: 25px;
+}
+.review-section p{
+  color: #fff;
+  font-size: 15px;
+}
+
+/* ----------review section end ----------------- */
+
+/* ---------------footer section start ------------- */
+.footer-section{
+  padding: 50px 0 0 0;
+  margin-top: -5px;
+}
+.contact-info{
+  width: 200px;
+  padding: 10px 0 0px 10px;
+  margin-left: 0;
+}
+.contact-info p{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 5px;
+}
+.contact-info i{
+  color: #fff;
+}
+.contact-info:hover{
+  box-shadow: 2px 7px 7px #000;
+}
+.social-ion{
+  margin-left: 30px;
+}
+.social-ion i{
+    background: #7c7c7c;
+    padding: 10px 10px;
+    border-radius:20px;
+    margin-right: 5px;
+}
+.social-ion i:hover{
+  background: #e30102;
+}
+.google-map{
+  margin-top: -250px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.copyright{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #d3d1d1;
+  font-size: 10px;
+}
+
+/* ----------------footer section end ------------- */
+
+}
